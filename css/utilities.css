@@ -1,0 +1,59 @@
+.container{
+    min-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}   
+
+.lg-img{
+    width: 100%;
+    margin: auto;
+}
+
+.block{
+    display: block;
+}
+
+.link-head{
+    font-weight: 700;
+    margin-block: 15%;
+}
+
+.app-head{
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.foot-links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 3%;
+}

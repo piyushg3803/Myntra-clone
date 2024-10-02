@@ -1,0 +1,302 @@
+body {
+  font-family: "Roboto Flex", sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: none;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  float: left;
+}
+
+.sidebar-menu {
+  display: none;
+}
+
+nav {
+  padding: 10px;
+  margin: -10px;
+  max-width: 100%;
+  box-shadow: 2px 0 10px 1px rgb(180, 180, 180);
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+}
+
+.logo {
+  width: 4rem;
+  height: 3rem;
+  margin-left: 2rem;
+}
+
+.left {
+  margin-left: 10px;
+  width: 50vw;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  padding: 20px;
+}
+
+.list li ul {
+  display: none;
+  list-style-type: none;
+  position: fixed;
+  background-color: white;
+  margin-top: 3rem;
+  border-bottom: 2px solid #ef20b0;
+}
+
+.list li:hover > ul {
+  display: block;
+}
+
+.right {
+  margin-right: 20px;
+  width: 50vw;
+}
+
+.icons label {
+  padding: 10px;
+}
+
+.search-box {
+  width: 25rem;
+  height: 2rem;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-pop{
+    display: none;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 80%;
+}
+
+input,
+.search {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.icons {
+  padding: 10px;
+  text-align: center;
+}
+
+.icons div {
+  padding: 10px;
+}
+
+.icons i {
+  font-size: 1.5rem;
+}
+
+.offers {
+  padding-top: 120px;
+}
+
+.carousel {
+  z-index: -1;
+}
+
+.cell img {
+  width: 33%;
+}
+
+.row img {
+  width: 20%;
+}
+
+.category {
+  margin-top: 50px;
+}
+
+.app-img {
+  width: 10rem;
+  margin: 0.5rem;
+}
+
+.off-img {
+  width: 5rem;
+  height: 5rem;
+}
+
+footer {
+  padding: 3rem;
+  margin-top: 2rem;
+  padding-inline: 6rem;
+  background-color: rgb(240, 243, 247);
+}
+
+.profiles i {
+  padding: 0.5rem;
+}
+
+.foot-off {
+  margin-top: 2rem;
+  /* font-size: 1.3rem; */
+}
+
+.foot-off > div > p {
+  padding-left: 1rem;
+}
+
+.searches p {
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.para p {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1068px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  nav > div {
+    justify-content: flex-start;
+  }
+
+ 
+
+  .sidebar-menu {
+    position: fixed;
+    display: none;
+    margin-left: -300px;
+  }
+
+  .active {
+    display: block;
+    position: fixed;
+    list-style-type: none;
+    padding: 2%;
+    width: 33vw;
+    height: 90vh;
+    margin-top: 39rem;
+    background-color: #ffffff;
+    margin-left: -10px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  .menu-list {
+    list-style-type: none;
+  }
+
+  .menu-list li {
+    padding-block: 30px;
+  }
+
+  footer {
+    text-align: center;
+    padding-inline: 2rem;
+  }
+
+  .foot-off div {
+    justify-content: center;
+  }
+
+  .apps div {
+    justify-content: center;
+  }
+
+  .foot-links div {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .search-box {
+    background-color: transparent;
+    justify-content: center;
+    width: 2rem;
+  }
+
+  .search-box i {
+    font-size: 1.3rem;
+  }
+
+  .search-pop{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 16%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: -10rem;
+  }
+
+  .active-search{
+    display: flex;
+    position: fixed;
+    margin-top: 0rem;
+    width: 100vw;
+    height: 16%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: margin-top .3s ease-in-out;
+  }
+
+  .search-pop input{
+    width: 70vw;
+    height: 40%;
+    margin: 0.5rem;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+  }
+
+  .search-pop i{
+    font-size: 1.2rem;
+  }
+
+  .cell img {
+    width: 30%;
+  }
+
+  .icons span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .sidebar-menu{
+    width: 100vw;
+    margin-top: 35rem;
+  }
+}
